@@ -104,6 +104,20 @@ for dataset in radMLBench.listDatasets():
 There is a simple example on how to use it in combination with a random forest
 classifier in `./examples/simpleTest.py`.
 
+Ideally, one should download the data to a local directory so that
+downloading from the internet is minimized for speed reaons. To do so,
+just use the `local_cache_dir` variable:
+
+``` data = radMLBench.loadData("Wang2024", local_cache_dir="~/radMLBench.repo") ```
+
+In case you want to load the data not as a dataframe (where ID and Target columns
+exist), but as a ready-to-use numpy dataset, just add the parameter `return_X_y`.
+This will convert the pandas dataframe into two numpy arrays X, and y. X will
+contain the data and y the labels.
+
+``` data = radMLBench.loadData("Wang2024", local_cache_dir="~/radMLBench.repo", return_X_y = True) ```
+
+
 
 ## Experiments
 
@@ -128,8 +142,9 @@ put downloadFirst to False again to execute the experiment.
 If you use radMLBench in a scientific publication, please consider citing the paper:
 
 Aydin Demircioglu.
-[radMLBench: A radiomics dataset collection for benchmarking in radiomics
-](https://arxiv.org/abs/2405.XXXXX).
-_arXiv preprint arXiv:2405.XXXXX_ (2024).
+[radMLBench: A radiomics dataset collection for benchmarking in radiomics](TBD).
+_TBD_ (2024).
+
+(This will update as soon as the manuscript is submitted).
 
 ```
