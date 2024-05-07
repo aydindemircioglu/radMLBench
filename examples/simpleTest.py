@@ -1,8 +1,6 @@
 from sklearn.metrics import roc_auc_score
 from sklearn.ensemble import RandomForestClassifier
 
-import sys
-sys.path.append(".")
 import radMLBench
 
 

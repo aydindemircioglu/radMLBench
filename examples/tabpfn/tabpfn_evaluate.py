@@ -8,8 +8,6 @@ import pandas as pd
 import seaborn as sns
 from scipy.stats import wilcoxon
 
-import sys
-sys.path.append("./")
 import radMLBench
 
 

@@ -14,6 +14,7 @@ setup(
     url='https://github.com/aydindemircioglu/radMLBench',
     license="MIT",
     description=('A Python wrapper for the radMLBench data repository.'),
+    long_description_content_type="text/markdown",
     long_description='''
 A Python wrapper for the radMLBench data repository.
 
@@ -25,13 +26,13 @@ please feel free to contact us via e-mail: aydin.demircioglu@uk-essen.de
 This project is hosted at https://github.com/aydindemircioglu/radMLBench
 ''',
     zip_safe=True,
-    install_requires=['pandas>=2.0.0',
-                    'requests>=2.24.0',
-                    'pyyaml>=5.3.1',
-                    'joblib>=1.2.0',
-                    'numpy>=1.10.0',
-                    'scikit-learn>=1.1.0'
-                    ],
+    install_requires=['pandas>=1.2.0',
+                    'requests>=2.18.0',
+                    'pyyaml>=5.2',
+                    'joblib>=0.12.0',
+                    'numpy>=1.18.0',
+                    'scikit-learn>=0.20.0'
+                    ], # guesses
     python_requires=">=3.6.0", # guess
     classifiers=[
         'Intended Audience :: Science/Research',

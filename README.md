@@ -1,9 +1,9 @@
-# RadMLBench
+# radMLBench
 
 This is a large collection of radiomic datasets, accessible via Python.
 
 
-## Installing RadMLBench
+## Installing radMLBench
 
 Install it via pip:
 

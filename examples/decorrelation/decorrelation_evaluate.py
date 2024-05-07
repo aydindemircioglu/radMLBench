@@ -16,8 +16,6 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 
-import sys
-sys.path.append("./")
 import radMLBench
 
 

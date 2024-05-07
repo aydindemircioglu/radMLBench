@@ -116,7 +116,7 @@ def loadData (dataset_name,return_X_y=False, local_cache_dir=None):
         if os.path.exists(dataset_path):
             dataset = pd.read_csv(dataset_path, compression='gzip')
         else:
-            print (dataset_path)
+            print (f"Downloading to {dataset_path}...")
             dataset_url = get_dataset_url(GITHUB_URL, dataset_name, suffix)
             dataset = pd.read_csv(dataset_url, compression='gzip')
             dataset_dir = os.path.split(dataset_path)[0]
