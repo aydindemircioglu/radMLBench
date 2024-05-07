@@ -1,0 +1,11 @@
+dataset: Meningioma-SEG-CLASS
+authors: Vassantachart et al.
+year: 2022
+pathology: Meningioma
+outcome: Tumor grade
+download_source: https://radiomics.uk/
+publication_title: "Automatic differentiation of Grade I and II meningiomas on magnetic resonance image using an asymmetric convolutional neural network"
+publication_doi: https://doi.org/10.1038/s41598-022-07859-0
+modality: MRI
+remarks: Original dataset at https://www.cancerimagingarchive.net/collection/meningioma-seg-class/
+software: PyRadiomics

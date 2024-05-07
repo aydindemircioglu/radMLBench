@@ -1,0 +1,11 @@
+dataset: Lu2019
+authors: Lu et al.
+year: 2019
+pathology: Ovarian cancer
+outcome: Progression free survival (at 2 years)
+download_source: https://doi.org/10.17632/4c5znk5m8t.1
+publication_title: "A mathematical-descriptor of tumor-mesoscopic-structure from computed-tomography images annotates prognostic- and molecular-phenotypes of epithelial ovarian cancer"
+publication_doi: https://doi.org/10.1038/s41467-019-08718-9
+modality: CT
+remarks: Only patients with follow-up at least 2 years were included, only those with bilateral tumors (Code > 1).
+software: Inhouse

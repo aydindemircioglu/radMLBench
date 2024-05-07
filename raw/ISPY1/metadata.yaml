@@ -1,0 +1,11 @@
+dataset: ISPY1
+authors: Newitt et al.
+year: 2016
+pathology: Breast cancer
+outcome: Hormone receptor positive status
+download_source: https://www.cancerimagingarchive.net/analysis-result/ispy1-tumor-seg-radiomics/
+publication_title: "Multi-center breast DCE-MRI data and segmentations from patients in the I-SPY 1/ACRIN 6657 trials"
+publication_doi: http://doi.org/10.7937/K9/TCIA.2016.HdHpgJLK
+modality: MRI
+remarks: TCIA sources at https://www.cancerimagingarchive.net/collection/ispy1/, features from the cited analysis were used.
+software: CaPTk

@@ -1,0 +1,11 @@
+dataset: Colorectal-Liver-Metastases
+authors: Simpson et al.
+year: 2024
+pathology: Colorectal cancer
+outcome: Survival (at 10 years)
+download_source: https://radiomics.uk/
+publication_title: "Preoperative CT and survival data for patients undergoing resection of colorectal liver metastases"
+publication_doi: https://doi.org/10.1038/s41597-024-02981-2
+modality: CT
+remarks: Original dataset at https://www.cancerimagingarchive.net/collection/colorectal-liver-metastases. Only patient that died were included.
+software: PyRadiomics

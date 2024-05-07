@@ -1,0 +1,11 @@
+dataset: Zhang2023
+authors: Zhang et al.
+year: 2023
+pathology: Lung cancer
+outcome: Histological invasiveness
+download_source: https://peerj.com/articles/14559/#supplemental-information
+publication_title: "Computed tomography-based radiomics machine learning models for prediction of histological invasiveness with sub-centimeter subsolid pulmonary nodules: a retrospective study"
+publication_doi: https://doi.org/10.7717/peerj.14559
+modality: CT
+remarks: Lesions, not patient-wise data.
+software: PyRadiomics

@@ -1,0 +1,11 @@
+dataset: C4KC-KiTS
+authors: Heller et al.
+year: 2021
+pathology: Kidney tumor
+outcome: Histological subtype
+download_source: https://radiomics.uk/
+publication_title: "The state of the art in kidney and kidney tumor segmentation in contrast-enhanced CT imaging: Results of the KiTS19 challenge"
+publication_doi: https://doi.org/10.1016/j.media.2020.101821
+modality: CT
+remarks: Original dataset at https://www.cancerimagingarchive.net/collection/c4kc-kits.
+software: PyRadiomics

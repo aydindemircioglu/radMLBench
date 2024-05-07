@@ -1,0 +1,11 @@
+dataset: Zhang2024A
+authors: Zhang et al.
+year: 2024
+pathology: Lung cancer
+outcome: Histological type
+download_source: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0300170#sec017
+publication_title: "Machine learning for differentiating lung squamous cell cancer from adenocarcinoma using Clinical-Metabolic characteristics and 18F-FDG PET/CT radiomics"
+publication_doi: https://doi.org/10.1371/journal.pone.0300170
+modality: PET/CT
+remarks:
+software: PyRadiomics

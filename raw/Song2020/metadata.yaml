@@ -1,0 +1,11 @@
+dataset: Song2020
+authors: Song et al.
+year: 2020
+pathology: Prostate cancer
+outcome: Clinical significance
+download_source: https://github.com/salan668/FAE/tree/master/Feature
+publication_title: "FeAture Explorer (FAE): A tool for developing and comparing radiomics models"
+publication_doi: https://doi.org/10.1371/journal.pone.0237587
+modality: MRI
+remarks:
+software: PyRadiomics

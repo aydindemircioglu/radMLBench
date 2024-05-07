@@ -1,0 +1,11 @@
+dataset: Petrillo2023
+authors: Petrillo et al.
+year: 2023
+pathology: Breast cancer
+outcome: Luminal type presence
+download_source: https://zenodo.org/records/8392800
+publication_title: "Radiomics and artificial intelligence analysis by T2-weighted imaging and dynamic contrast-enhanced magnetic resonance imaging to predict Breast Cancer Histological Outcome"
+publication_doi: https://doi.org/10.1007/s11547-023-01718-2
+modality: MRI
+remarks: Since luminal vs non-luminal had highest AUC, this was selected as endpoint. All features (T2, DCE) were merged.
+software: PyRadimomics

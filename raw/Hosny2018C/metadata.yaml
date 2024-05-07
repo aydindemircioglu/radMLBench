@@ -1,0 +1,11 @@
+dataset: Hosny2018C
+authors: Hosny et al.
+year: 2018
+pathology: NSCLC
+outcome: Overall survival (at 2 years)
+download_source: https://github.com/modelhub-ai/deep-prognosis
+publication_title: "Deep learning for lung cancer prognostication: A retrospective multi-cohort radiomics study"
+publication_doi: https://doi.org/10.1371/journal.pmed.1002711
+modality: CT
+remarks: "Moffitt subset. Removed exponential_glcm features since they exhibited NA values due to numerical overflow."
+software: PyRadiomics

@@ -1,0 +1,11 @@
+dataset: UPENN-GBM
+authors: Bakas et al.
+year: 2022
+pathology: Glioblastoma
+outcome: MGMT mutation status
+download_source: https://radiomics.uk/
+publication_title: "The University of Pennsylvania glioblastoma (UPenn-GBM) cohort: advanced MRI, clinical, genomics, & radiomics"
+publication_doi: https://doi.org/10.1038/s41597-022-01560-7
+modality: MRI
+remarks: Original data at https://www.cancerimagingarchive.net/collection/upenn-gbm/.  Features of the enhancing tumor were useed.
+software: PyRadiomics

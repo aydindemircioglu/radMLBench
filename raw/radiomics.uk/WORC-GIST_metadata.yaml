@@ -1,0 +1,11 @@
+dataset: WORC-GIST
+authors: Starmans et. al.
+year: 2021
+pathology: Gastrointestinal cancer
+outcome:  Gastrointestinal stromal tumors presence
+download_source: https://radiomics.uk/
+publication_title: "Reproducible radiomics through automated machine learning validated on twelve clinical applications"
+publication_doi: https://doi.org/10.48550/arXiv.2108.08618
+modality: CT
+remarks: Original data at https://xnat.bmia.nl/data/projects/worc
+software: PyRadiomics

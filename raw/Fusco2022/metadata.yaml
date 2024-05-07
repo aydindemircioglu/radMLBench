@@ -1,0 +1,11 @@
+dataset: Fusco2022
+authors: Fusco et al.
+year: 2022
+pathology: Breast cancer
+outcome: Malignancy presence
+download_source: https://zenodo.org/records/6344730
+publication_title: "Radiomic and Artificial Intelligence Analysis with Textural Metrics Extracted by Contrast-Enhanced Mammography and Dynamic Contrast Magnetic Resonance Imaging to Detect Breast Malignant Lesions"
+publication_doi: https://doi.org/10.3390/curroncol29030159
+modality: MRI
+remarks:
+software: TextureToolbox

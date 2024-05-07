@@ -1,0 +1,11 @@
+dataset: Granata2021
+authors: Granata et al.
+year: 2021
+pathology: Lung adenocarcinoma
+outcome: Overall survival (at 32 months)
+download_source: https://zenodo.org/records/5162861
+publication_title: "Preliminary Report on Computed Tomography Radiomics Features as Biomarkers to Immunotherapy Selection in Lung Adenocarcinoma Patients"
+publication_doi: https://doi.org/10.3390/cancers13163992
+modality: CT
+remarks: No dead status/event is given.
+software: HealthMyne (Commercial)

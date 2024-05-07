@@ -1,0 +1,11 @@
+dataset: Dai2023
+authors: Dai et al.
+year: 2023
+pathology: Gastrointestinal malignancies
+outcome: Thrombocytopenia presence
+download_source: https://peerj.com/articles/16230/#supplemental-information
+publication_title: "A contrast-enhanced CT-based whole-spleen radiomics signature for early prediction of oxaliplatin-related thrombocytopenia in patients with gastrointestinal malignancies: a retrospective study"
+publication_doi: https://doi.org/10.7717/peerj.16230
+modality: CT
+remarks:
+software: PyRadiomics

@@ -1,0 +1,11 @@
+dataset: Deng2023
+authors: Deng et al.
+year: 2023
+pathology: NSCLC
+outcome: Pathological diagnosis
+download_source: https://github.com/BboyT/BM_NSCLC_subpathology
+publication_title: "MRI radiomics for brain metastasis sub-pathology classification from non-small cell lung cancer: a machine learning, multicenter study"
+publication_doi: https://doi.org/10.1007/s13246-023-01300-0
+modality: MRI
+remarks: All data were merged. Attached python applies CV 'wrongly' on internal data, but there is external data, so test results are unbiased.
+software: PyRadiomics

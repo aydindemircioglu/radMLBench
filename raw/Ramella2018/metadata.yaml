@@ -1,0 +1,11 @@
+dataset: Ramella2018
+authors: Ramella et al.
+year: 2018
+pathology: NSCLC
+outcome: Adaptive chemoradiation presence
+download_source: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0207455#sec010
+publication_title: "A radiomic approach for adaptive radiotherapy in non-small cell lung cancer patients"
+publication_doi: https://doi.org/10.1371/journal.pone.0207455
+modality: CT
+remarks:
+software: Inhouse

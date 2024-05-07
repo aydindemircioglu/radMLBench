@@ -1,0 +1,11 @@
+dataset: Hunter2023
+authors: Hunter et al.
+year: 2023
+pathology: Lung cancer
+outcome: Nodule malignancy presence
+download_source: https://data.mendeley.com/datasets/rxn95mp24d/1
+publication_title: "Radiomics-based decision support tool assists radiologists in small lung nodule classification and improves lung cancer early diagnosis"
+publication_doi: https://doi.org/10.1038/s41416-023-02480-y
+modality: CT
+remarks:
+software: TexLab

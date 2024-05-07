@@ -1,0 +1,11 @@
+dataset: Head-Neck-PET-CT
+authors: Vallières et al.
+year: 2017
+pathology: Head-and-neck cancer
+outcome: Lymph node metastasis presence
+download_source: https://radiomics.uk/
+publication_title: "Radiomics strategies for risk assessment of tumour failure in head-and-neck cancer"
+publication_doi: https://doi.org/10.1038/s41598-017-10371-5
+modality: PET/CT
+remarks: Original data at https://www.cancerimagingarchive.net/collection/head-neck-pet-ct/.
+software: PyRadiomics

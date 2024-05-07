@@ -1,0 +1,11 @@
+dataset: LGG-1p19qDeletion
+authors: Akkus et al.
+year: 2017
+pathology: Glioma
+outcome: 1p19q co-deletion status
+download_source: https://radiomics.uk/
+publication_title: "Predicting Deletion of Chromosomal Arms 1p/19q in Low-Grade Gliomas from MR Images Using Machine Intelligence"
+publication_doi: https://doi.org/10.1007/s10278-017-9984-3
+modality: MRI
+remarks: Original data at https://www.cancerimagingarchive.net/collection/lgg-1p19qdeletion/
+software: PyRadiomics

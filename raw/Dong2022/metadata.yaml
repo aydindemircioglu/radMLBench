@@ -1,0 +1,11 @@
+dataset: Dong2022
+authors: Dong et al.
+year: 2022
+pathology: Lung cancer
+outcome: Tuberculosis granuloma presence
+download_source: https://peerj.com/articles/14127/#supplemental-information
+publication_title: "Radiomics combined with clinical features in distinguishing non-calcifying tuberculosis granuloma and lung adenocarcinoma in small pulmonary nodules"
+publication_doi: https://doi.org/10.7717/peerj.14127
+modality: CT
+remarks:
+software: PyRadiomics (FAE)

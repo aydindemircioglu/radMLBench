@@ -1,0 +1,11 @@
+dataset: LNDb
+authors: Pedrosa et al.
+year: 2019
+pathology: Lung cancer
+outcome: Fleischner score group
+download_source: https://radiomics.uk/
+publication_title: "LNDb: a lung nodule database on computed tomography"
+publication_doi: https://doi.org/10.48550/arXiv.1911.08434
+modality: CT
+remarks: Original dataset et https://zenodo.org/records/6613714#.Y8vLZezMIUq
+software: PyRadiomics

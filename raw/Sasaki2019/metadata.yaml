@@ -1,0 +1,11 @@
+dataset: Sasaki2019
+authors: Sasaki et al.
+year: 2019
+pathology: Glioblastoma
+outcome: MGMT mutation status
+download_source: https://www.nature.com/articles/s41598-019-50849-y#Sec11
+publication_title: "Radiomics and MGMT promoter methylation for prognostication of newly diagnosed glioblastoma"
+publication_doi: https://doi.org/10.1038/s41598-019-50849-y
+modality: MRI
+remarks:
+software: Inhouse

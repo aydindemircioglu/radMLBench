@@ -1,0 +1,11 @@
+dataset: BraTS-2021
+authors: Flanders et al.
+year: 2021
+pathology: Glioblastoma
+outcome: MGMT mutation status
+download_source: https://radiomics.uk/
+publication_title: "The RSNA-ASNR-MICCAI BraTS 2021 Benchmark on Brain Tumor Segmentation and Radiogenomic Classification"
+publication_doi: https://doi.org/10.48550/arXiv.2107.02314
+modality: MRI
+remarks: Original dataset at https://www.kaggle.com/c/rsna-miccai-brain-tumor-radiogenomic-classification
+software: PyRadiomics

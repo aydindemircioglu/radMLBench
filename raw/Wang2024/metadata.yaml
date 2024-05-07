@@ -1,0 +1,11 @@
+dataset: Wang2024
+authors: Wang et al.
+year: 2024
+pathology: Glioblastoma
+outcome: EGFR mutation status
+download_source: https://doi.org/10.6084/m9.figshare.25203245
+publication_title: "Quantifying intra-tumoral genetic heterogeneity of glioblastoma toward precision medicine using MRI and a data-inclusive machine learning algorithm"
+publication_doi: https://doi.org/10.1371/journal.pone.0299267
+modality: MRI
+remarks: "Tumoral ROIs were used. Sliding features were averaged. Multiple biopsies were ignored by taking the first. Three samples were removed since the T2 was missing in these."
+software: Inhouse

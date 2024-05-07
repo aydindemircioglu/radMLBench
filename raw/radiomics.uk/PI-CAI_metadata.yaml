@@ -1,0 +1,11 @@
+dataset: PI-CAI
+authors: Saha et al.
+year: 2021
+pathology: Prostate cancer
+outcome: Gleason score risk group
+download_source: https://radiomics.uk/
+publication_title: "End-to-end prostate cancer detection in bpMRI via 3D CNNs: Effects of attention mechanisms, clinical priori and decoupled false positive reduction"
+publication_doi: https://doi.org/10.1016/j.media.2021.102155
+modality: MRI
+remarks: Original dataset at https://pi-cai.grand-challenge.org/
+software: PyRadiomics

@@ -1,0 +1,11 @@
+dataset: QIN-HEADNECK
+authors: Fedorov et al.
+year: 2016
+pathology: Head-and-neck cancer
+outcome: Lymph node metastasis presence
+download_source: https://radiomics.uk/
+publication_title: "DICOM for quantitative imaging biomarker development: a standards based approach to sharing clinical data and structured PET/CT analysis results in head and neck cancer research."
+publication_doi: https://doi.org/10.7717/peerj.2057
+modality: PET/CT
+remarks: Original dataset at https://www.cancerimagingarchive.net/collection/qin-headneck/. CT features were used.
+software: PyRadiomics

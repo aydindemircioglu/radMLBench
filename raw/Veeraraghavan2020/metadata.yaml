@@ -1,0 +1,11 @@
+dataset: Veeraraghavan2020
+authors: Veeraraghavan et al.
+year: 2020
+pathology: Breast cancer
+outcome: High tumor burden presence
+download_source: https://github.com/The-Veeraraghavan-Lab/SciRepEndometrial2020
+publication_title: "Machine learning-based prediction of microsatellite instability and high tumor mutation burden from contrast-enhanced computed tomography in endometrial cancers"
+publication_doi: https://doi.org/10.1038/s41598-020-72475-9
+modality: MRI
+remarks:
+software: CERR

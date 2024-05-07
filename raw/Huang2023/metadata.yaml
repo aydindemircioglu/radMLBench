@@ -1,0 +1,11 @@
+dataset: Huang2023
+authors: Huang et al.
+year: 2023
+pathology: Renal cancer
+outcome: Malignancy presence
+download_source: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0292110#sec019
+publication_title: "Enhanced and unenhanced: Radiomics models for discriminating between benign and malignant cystic renal masses on CT images: A multi-center study"
+publication_doi: https://doi.org/10.1371/journal.pone.0292110
+modality: CT
+remarks: Unenhanced CT features were used
+software: PyRadiomics

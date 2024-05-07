@@ -1,0 +1,11 @@
+dataset: Brancato2023
+authors: Castaldo et al.
+year: 2023
+pathology: Prostate cancer
+outcome: Clinical significance
+download_source: https://data.mendeley.com/datasets/dvysdynchh/1
+publication_title: "A Framework of Analysis to Facilitate the Harmonization of Multicenter Radiomic Features in Prostate Cancer"
+publication_doi: https://doi.org/10.3390/jcm12010140
+modality: MRI
+remarks: Only center 2 was used, since no labels were available for center 1
+software: PyRadiomics

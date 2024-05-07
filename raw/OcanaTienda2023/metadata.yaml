@@ -1,0 +1,11 @@
+dataset: OcanaTienda2023
+authors: Ocaña-Tienda et al.
+year: 2023
+pathology: Brain metastasis
+outcome: Survival (at 2 years)
+download_source: https://springernature.figshare.com/articles/dataset/Radiomic_data_of_annotated_brain_metastases/22277638/1
+publication_title: "A comprehensive dataset of annotated brain metastasis MR images with clinical and radiomic data"
+publication_doi: https://doi.org/10.1038/s41597-023-02123-0
+modality: MRI
+remarks: All patients died, therefore all data was processed.
+software: PyRadiomics

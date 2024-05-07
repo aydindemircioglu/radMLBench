@@ -1,0 +1,11 @@
+dataset: Ahn2021
+authors: 'Choi et al.'
+year: 2021
+pathology: Glioblastoma
+outcome: MGMT mutation status
+download_source: https://data.mendeley.com/datasets/9mpy8mc6hn/1
+publication_title: "Analysis of heterogeneity of peritumoral T2 hyperintensity in patients with pretreatment glioblastoma: Prognostic value of MRI-based radiomics"
+publication_doi: https://doi.org/10.1016/j.ejrad.2019.108642
+modality: MRI
+remarks:
+software: PyRadiomics

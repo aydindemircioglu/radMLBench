@@ -1,0 +1,11 @@
+dataset: Prostate-MRI-US-Biopsy
+authors: Sonn et al.
+year: 2013
+pathology: Prostate cancer
+outcome: Gleason score risk group
+download_source: https://radiomics.uk/
+publication_title: "Targeted biopsy in the detection of prostate cancer using an office based magnetic resonance ultrasound fusion device"
+publication_doi: https://doi.org/10.1016/j.juro.2012.08.095
+modality: MRI
+remarks: Original dataset at https://www.cancerimagingarchive.net/collection/prostate-mri-us-biopsy/
+software: PyRadiomics

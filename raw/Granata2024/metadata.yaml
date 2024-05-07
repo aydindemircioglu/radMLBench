@@ -1,0 +1,11 @@
+dataset: Granata2024
+authors: Granata et al.
+year: 2024
+pathology: Colorectal cancer
+outcome: Tumor budding presence
+download_source: https://zenodo.org/records/10464602
+publication_title: "Machine Learning and Radiomics Analysis for Tumor Budding Prediction in Colorectal Liver Metastases Magnetic Resonance Imaging Assessment"
+publication_doi: https://doi.org/10.3390/diagnostics14020152
+modality: MRI
+remarks:
+software: PyRadiomics

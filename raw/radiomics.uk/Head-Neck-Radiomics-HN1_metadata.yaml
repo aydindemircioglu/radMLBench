@@ -1,0 +1,11 @@
+dataset: Head-Neck-Radiomics-HN1
+authors: Aerts et al.
+year: 2014
+pathology: Head-and-neck cancer
+outcome: Lymph node metastasis presence
+download_source: https://radiomics.uk/
+publication_title: "Decoding Tumour Phenotype by Noninvasive Imaging Using a Quantitative Radiomics Approach"
+publication_doi: http://doi.org/10.1038/ncomms5006
+modality: CT
+remarks: Original data at https://www.cancerimagingarchive.net/collection/head-neck-radiomics-hn1/
+software: PyRadiomics

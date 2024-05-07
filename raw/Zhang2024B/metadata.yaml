@@ -1,0 +1,11 @@
+dataset: Zhang2024B
+authors: Zhang et al.
+year: 2024
+pathology: Gastric cancer
+outcome: Lymph node metastasis presence
+download_source: https://peerj.com/articles/17111/#supplemental-information
+publication_title: "Predictive nomogram for lymph node metastasis and survival in gastric cancer using contrast-enhanced computed tomography-based radiomics: a retrospective study"
+publication_doi: https://doi.org/10.7717/peerj.17111
+modality: CT
+remarks:
+software: PyRadiomics
