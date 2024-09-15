@@ -8,6 +8,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 
 import cv2
+import hashlib
 import joblib
 from joblib import dump, load
 import numpy as np
@@ -24,6 +25,9 @@ optuna.logging.set_verbosity(optuna.logging.FATAL)
 
 
 
+num_splits = 10
+num_repeats = 30
+
 search_space = {
     'fs_method': ["Bhattacharyya", "ANOVA", "LASSO", "ET"],
     'N': [2**k for k in range(0,7)],
@@ -32,6 +36,13 @@ search_space = {
     'C_LR': [2**k for k in range(-7,7,2)],
     'C_SVM': [2**k for k in range(-7,7,2)]
 }
+
+decorrelation_cache = {}
+def get_md5_checksum(X_train, X_test):
+    md5 = hashlib.md5()
+    md5.update(X_train.tobytes())
+    md5.update(X_test.tobytes())
+    return md5.hexdigest()
 
 
 
@@ -50,6 +61,18 @@ def decorrelate_features(X_train, X_test, threshold):
     features_to_keep = np.delete(np.arange(n_features), np.unique(correlated_feature_indices[:, 1]))
 
     return X_train[:, features_to_keep], X_test[:, features_to_keep]
+
+
+
+def cached_decorrelate_features(X_train, X_test, threshold):
+    global decorrelation_cache
+    checksum = get_md5_checksum(X_train, X_test)
+    if checksum in decorrelation_cache:
+        return decorrelation_cache[checksum]
+
+    X_train_decorrelated, X_test_decorrelated = decorrelate_features(X_train, X_test, threshold)
+    decorrelation_cache[checksum] = (X_train_decorrelated, X_test_decorrelated)
+    return X_train_decorrelated, X_test_decorrelated
 
 
 
@@ -93,14 +116,16 @@ def objective(trial, dataset, threshold):
         clf = SVC(kernel = "rbf", C = C_SVM, gamma = C_gamma, probability = True)
 
     X, y = radMLBench.loadData(dataset, return_X_y = True, local_cache_dir = "./datasets")
-    cvSplits = radMLBench.getCVSplits((X,y), num_splits=10, num_repeats=1)
+    cvSplits = radMLBench.getCVSplits((X,y), num_splits=num_splits, num_repeats=num_repeats)
 
     y_probs = []
     y_gt = []
     for i, (train_index, test_index) in enumerate(cvSplits):
         X_train, X_test = X[train_index], X[test_index]
         y_train, y_test = y[train_index], y[test_index]
-        X_train_decorrelated, X_test_decorrelated = decorrelate_features(X_train, X_test, threshold)
+
+        # to avoid recomputation, we use a cache
+        X_train_decorrelated, X_test_decorrelated = cached_decorrelate_features(X_train, X_test, threshold)
 
         nFeatures_corr = min(N, X_train_decorrelated.shape[1])
         if fs_method == "LASSO":
@@ -121,18 +146,37 @@ def objective(trial, dataset, threshold):
 
         clf.fit(X_train_selected, y_train)
         y_prob = clf.predict_proba(X_test_selected)[:, 1]
-        y_probs.extend(y_prob)
-        y_gt.extend(y_test)
+        y_probs.append(y_prob)
+        y_gt.append(y_test)
 
-    cv_auc = roc_auc_score(y_gt, y_probs)
+    y_probs_flat = [p for y in y_probs for p in y]
+    y_gt_flat = [gt for y in y_gt for gt in y]
+    cv_auc = roc_auc_score(y_gt_flat, y_probs_flat)
+
+    trial.set_user_attr("y_probs", y_probs)
+    trial.set_user_attr("y_gt", y_gt)
+    trial.set_user_attr("num_splits", num_splits)
+    trial.set_user_attr("num_repeats", num_repeats)
+
     return cv_auc
 
 
 
 def optimize_dataset_threshold(dataset, threshold):
     print("Starting dataset:", dataset, "with threshold:", threshold)
-#    optuna.logging.set_verbosity(optuna.logging.ERROR)
     warnings.filterwarnings("ignore", category=ExperimentalWarning, module="optuna.samplers")
+    os.makedirs("./examples/decorrelation/results", exist_ok = True)
+
+    # check if we have computed it already
+    csvPath = f"./examples/decorrelation/results/trial_{dataset}_{threshold}.csv"
+    try:
+        df = pd.read_csv(csvPath, compression = "gzip")
+        auc = np.max(df.value)
+        print (f"Found cache in {csvPath}")
+        return dataset, threshold, auc
+    except:
+        # need to recompute
+        pass
 
     with warnings.catch_warnings():
         warnings.simplefilter("ignore")
@@ -141,8 +185,8 @@ def optimize_dataset_threshold(dataset, threshold):
         best_params = study.best_params
         auc = study.best_value
         df = study.trials_dataframe()
+        print(df)
         print("\tOptimizing for dataset:", dataset, "with threshold:", threshold, "obtained", auc, "  #Trials", len(df))
-        os.makedirs("./examples/decorrelation/results", exist_ok = True)
         df.to_csv(f"./examples/decorrelation/results/trial_{dataset}_{threshold}.csv", compression = "gzip", index = False)
     return dataset, threshold, auc
 
