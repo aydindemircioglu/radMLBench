@@ -26,7 +26,7 @@ Arita2018:
   dataset: Arita2018
   download_source: https://www.nature.com/articles/s41598-018-30273-4#Sec18
   modality: MRI
-  nFeatures: 684
+  nFeatures: 683
   nInstances: 168
   outcome: IDH mutation status
   pathology: Glioma
@@ -142,7 +142,7 @@ Deng2023:
   dataset: Deng2023
   download_source: https://github.com/BboyT/BM_NSCLC_subpathology
   modality: MRI
-  nFeatures: 224
+  nFeatures: 225
   nInstances: 261
   outcome: Pathological diagnosis
   pathology: NSCLC

@@ -30,13 +30,13 @@ The complete list of datasets is
 | Dataset                     |   Year | Modality   |   #Instances |   #Features |   Dimensionality |   ClassBalance | DOI                                          |
 |:----------------------------|-------:|:-----------|-------------:|------------:|-----------------:|---------------:|:---------------------------------------------|
 | Ahn2021                     |   2021 | MRI        |          114 |         108 |             0.96 |             55 | https://doi.org/10.1016/j.ejrad.2019.108642  |
-| Arita2018                   |   2018 | MRI        |          168 |         684 |             4.08 |             66 | https://doi.org/10.1038/s41598-018-30273-4   |
+| Arita2018                   |   2018 | MRI        |          168 |         683 |             4.08 |             66 | https://doi.org/10.1038/s41598-018-30273-4   |
 | BraTS-2021                  |   2021 | MRI        |          577 |        4060 |             7.04 |             52 | https://doi.org/10.48550/arXiv.2107.02314    |
 | Brancato2023                |   2023 | MRI        |           58 |        2380 |            41.07 |             60 | https://doi.org/10.3390/jcm12010140          |
 | C4KC-KiTS                   |   2021 | CT         |           70 |         315 |             4.53 |             66 | https://doi.org/10.1016/j.media.2020.101821  |
 | Colorectal-Liver-Metastases |   2024 | CT         |           90 |         525 |             5.86 |             84 | https://doi.org/10.1038/s41597-024-02981-2   |
 | Dai2023                     |   2023 | CT         |          119 |         851 |             7.17 |             26 | https://doi.org/10.7717/peerj.16230          |
-| Deng2023                    |   2023 | MRI        |          261 |         224 |             0.87 |             36 | https://doi.org/10.1007/s13246-023-01300-0   |
+| Deng2023                    |   2023 | MRI        |          261 |         225 |             0.87 |             36 | https://doi.org/10.1007/s13246-023-01300-0   |
 | Dong2022                    |   2022 | CT         |          279 |         851 |             3.06 |             49 | https://doi.org/10.7717/peerj.14127          |
 | Fusco2022                   |   2022 | MRI        |           54 |         192 |             3.59 |             61 | https://doi.org/10.3390/curroncol29030159    |
 | Granata2021                 |   2021 | CT         |           88 |         580 |             6.61 |             47 | https://doi.org/10.3390/cancers13163992      |
@@ -124,6 +124,9 @@ contain the data and y the labels.
 The decorrelation example can be found in `examples/decorrelation`,
 to execute it, start `./examples/decorrelation/decorrelation.py`.
 
+**NOTE**: Due to size problems, it is not possible to upload the .csv result files to github for the time being. Thus, to recreate the results, please rerun the experiment.
+ 
+
 The other example, TabFPN, can be found in `examples/tebpfn`.
 However, before executing this, one must install TabFPN (which in turn
 will install things like torch). One must also execute TabFPN once
@@ -136,15 +139,11 @@ put downloadFirst to False again to execute the experiment.
 
 
 
-
 ## Citing radMLBench
 
 If you use radMLBench in a scientific publication, please consider citing the paper:
 
-Aydin Demircioglu.
-[radMLBench: A radiomics dataset collection for benchmarking in radiomics](TBD).
-_TBD_ (2024).
-
-(This will update as soon as the manuscript is submitted).
-
-```
+Aydin Demircioglu.  
+[radMLBench: A radiomics dataset collection for benchmarking in radiomics](https://doi.org/10.1016/j.compbiomed.2024.109140).  
+_Computers in Biology and Medicine_, Volume 182, 2024, 109140.  
+ISSN 0010-4825.

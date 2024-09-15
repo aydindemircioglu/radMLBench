@@ -474,6 +474,7 @@ def Arita2018 (folder = None):
     data["ID"] = data["Pt. ID"]
     data = data[[z for z in data.keys()[33:]]]
     data = data[data.isnull().sum(axis=1) < 22]
+    data = data.drop(["Image_ID"], axis  = 1)
     data = data.reset_index(drop = True)
     return data.copy()
 
@@ -527,7 +528,8 @@ def Deng2023 (folder = None):
     data["Target"] = data["pathology"]
     data = data.reset_index(drop = True).reset_index(drop = False)
     data["ID"] = data["index"]
-    data = data.drop(['diagnostics_Mask-interpolated_VolumeNum_t1c', 'index', 'set', 'pathology'], axis = 1)
+    #data = data.drop([k for k in data.keys() if "diagn" in k], axis = 1).copy()
+    data = data.drop(['index', 'set', 'pathology'], axis = 1)
     return data.copy()
 
 
