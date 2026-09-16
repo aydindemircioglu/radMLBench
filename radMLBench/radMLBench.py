@@ -25,7 +25,12 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 import pandas as pd
 import numpy as np
 import os
-from pkg_resources import resource_filename
+
+try:
+    from importlib.resources import files
+except ImportError: # Python <3.9
+    from importlib_resources import files
+    
 import requests
 import warnings
 import subprocess
@@ -167,24 +172,16 @@ def getCVSplits(dataset, num_splits=10, num_repeats=10):
 
 def readMetaData ():
     """Internal. Reads metadata into variable"""
-    def read_yaml(file_path):
-        try:
-            with open(file_path, 'r') as stream:
-                data = yaml.safe_load(stream)
-                return data
-        except Exception as e:
-            print ('Unable to read metadata file for all dataset!')
-            print ('Error', e)
-            return None
-
     global metaData
     if metaData is None:
-        #print ("Reading metadata.")
-        package_dir = resource_filename('radMLBench', '')
-        metadata_path = os.path.join(package_dir, 'metadata.yaml')
-        metaData = read_yaml(metadata_path)
-    pass
-
+        try:
+            ref = files('radMLBench').joinpath('metadata.yaml')
+            with ref.open('r') as stream:
+                metaData = yaml.safe_load(stream)
+        except Exception as e:
+            print('Unable to read metadata file for all dataset!')
+            print('Error', e)
+            metaData = None
 
 
 
