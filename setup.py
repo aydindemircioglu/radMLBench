@@ -5,11 +5,12 @@ from setuptools import setup, find_packages
 
 setup(
     name='radMLBench',
-    version='1.0',
+    version='1.2',
     author='Aydin Demircioglu',
     author_email=('aydin.demircioglu@uk-essen.de'),
     packages=find_packages(),
-    package_data={'radMLBench': ['./metadata.yaml']},
+    package_data={'radMLBench': ['metadata.yaml']},
+    python_required=">=3.9",
     include_package_data=True,
     url='https://github.com/aydindemircioglu/radMLBench',
     license="MIT",
